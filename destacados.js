@@ -1,38 +1,29 @@
 const pages = document.querySelectorAll(".page");
 
+const overlays = document.getElementsByClassName("overlay");
 
 let currentIndex= 0; ///for the slides
  
- let current = 100;   /// for the dark overlay
-
-
- //identify the back button element
+//identify the arrow image
 
  const flecha = document.getElementById("flecha");
 
- let rotation = 0
+ let rotation = 0 ;
    
-
-
 const slide = ()=>{
-//
+
+// Rotate again in the first slide
+
 if (currentIndex === pages.length - 1 ){
 
   rotation += 180;
+
 
   flecha.style.transform= `rotate(${rotation}deg)`;
 
        back();}
 
        else{
-
-
-   //move the darkie square 1 grade deaper
-   
-     document.getElementById('darkie').style.zIndex = (current - 1);  
-     current = (current - 1);
-
-    
 
     
     pages[currentIndex].style.left= '-100%'; /*slides the page to the left*/ 
@@ -46,6 +37,10 @@ if (currentIndex === pages.length - 1 ){
         //increment index
 
         currentIndex = currentIndex + 1;
+
+        /// remove opacity of incoming slide
+
+        overlays[currentIndex].style.opacity = "0";
 
         //ROTATE ARROW LOGO IN LAST SLIDE
 
@@ -77,16 +72,15 @@ function mOver() {
         pages[2].style.left="0";
         pages[3].style.left="0";
 
-        //reset darkie z-indes and current
-    
-          function resetDarkie(){
-            current = 100;
-            document.getElementById('darkie').style.zIndex= current;
-                                }
-            setTimeout(resetDarkie, 1000);   
-                    
-        };
-        
+      //reset overlays opacity
+        overlays[1].style.opacity = 0.5;
+        overlays[2].style.opacity = 0.5;
+        overlays[3].style.opacity = 0.5; 
+    }
+
+
+
+      
 
      
     

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="destacados.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index 2</title>
+    <title>Slide and zoom out</title>
 </head>
 <body>
     <div class="navigation_container">
@@ -17,30 +17,37 @@
                  id="flecha">
             </div>
             
-            <div class="promo__next_dark" id="darkie">
-            </div>
+            
     </div>
-    <div class="container"  >
+    <div class="container"  id="zoomImage"
+    >
         <div class="pages" >
 
 
 
              <div class="page one"  >
-            <img src="https://live.staticflickr.com/65535/53074578847_46a59e1618_b.jpg" 
-            width="100%" height="100%" alt="modular"/>
-            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+              <div class="overlay" id="over1" style="opacity: 0;"></div>
+            
+                <img src="https://live.staticflickr.com/65535/53074578847_46a59e1618_b.jpg" 
+                width="100%" height="100%" alt="modular"/>
+                <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
                 
-              </div>
-             <div class="page two">
-              <img src="https://live.staticflickr.com/65535/53075154136_dd26bf5d1a_b.jpg" width="100%" height="100%" alt="karimbio"/>
+             </div>
+
+              <div class="page two">
+                <div class="overlay" id="over2"></div>
+                <img src="https://live.staticflickr.com/65535/53075154136_dd26bf5d1a_b.jpg" width="100%" height="100%" alt="karimbio"/>
                
-             </div>
-             <div class="page three">
-          <img src="https://live.staticflickr.com/65535/53074578872_a5e8f26334_b.jpg" 
-          width="100%" height="100%" alt="combi"/>
+              </div>
               
-             </div>
-             <div class="page four">
+              <div class="page three" >
+                <div class="overlay" id="over3"></div>
+                <img src="https://live.staticflickr.com/65535/53074578872_a5e8f26334_b.jpg" 
+                  width="100%" height="100%" alt="combi"/>
+              </div>
+
+              <div class="page four" id="over4">
+                       <div class="overlay"></div>
                        <img src="https://live.staticflickr.com/65535/53075661883_d91ceaf0f4_c.jpg" 
                        width="100%" height="100%" alt="arquitectura"/>
              </div>
