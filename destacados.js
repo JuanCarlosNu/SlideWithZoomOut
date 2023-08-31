@@ -68,9 +68,9 @@ function mOver() {
         //reset index and pages positions
         currentIndex = 0;
         pages[0].style.left ="-100px";
-        pages[1].style.left="0";
-        pages[2].style.left="0";
-        pages[3].style.left="0";
+        pages[1].style.left="48px";
+        pages[2].style.left="48px";
+        pages[3].style.left="48px";
 
       //reset overlays opacity
         overlays[1].style.opacity = 0.5;

@@ -79,15 +79,18 @@
         left: -120px;
     }
     .two{
+        left: 48px;
         background-color:black;
         z-index: 99;
         opacity: 1;
     }
     .three{
+        left: 48px;
         background-color:black;
         z-index: 98;
     }
     .four{
+        left: 48px;
         background-color:black;
         z-index: 97;
     }
