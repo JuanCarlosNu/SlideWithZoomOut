@@ -26,7 +26,7 @@ if (currentIndex === pages.length - 1 ){
        else{
 
     
-    pages[currentIndex].style.left= '-100%'; /*slides the page to the left*/ 
+    pages[currentIndex].style.left= '-105%'; /*slides the page to the left*/ 
 
 
     pages[currentIndex + 1].style.left= '-120px';/*makes current page stand a little left fo us to see the next*/ 
